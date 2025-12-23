@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    container_name: python_runner
+    restart: unless-stopped
+    environment:
+      - TZ=America/Bahia
+    volumes:
+      - ./app:/app
+    tty: true
+    stdin_open: true
+    command: "logger.py"
