@@ -8,7 +8,6 @@ Docker is a fantastic tool and can be used for a number of purposes. At one poin
 
 - Minimal base image (python:3.12-slim)
 - PYTHONPATH=/app allows imports without installing the code as a package
-- User defined python install dependencies using requirements.txt file
 - Dependencies can be listed by the user using [requirements.txt](requirements.txt) file
 - ENTRYPOINT ["python"] makes the container behave like the Python CLI
 
